@@ -23,7 +23,7 @@ services:
             MYSQL_PASSWORD: wppass
             MYSQL_RANDOM_ROOT_PASSWORD: '1'
         volumes: 
-            - db:/var/lib/mysql
+            - mb:/var/lib/mysql
 
     adminer:
         depends_on: 
@@ -37,4 +37,4 @@ networks:
     back:
         
 volumes: 
-    db:
+    mb:
